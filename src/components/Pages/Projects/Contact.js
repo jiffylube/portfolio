@@ -22,7 +22,7 @@ function Contact(props) {
 
       <div>
         <a href="https://www.linkedin.com/in/jeffrey-lu-a906b0a6" className="projectsLinks">
-          <img id="linkedin" src={linkedIcon}/>
+          <img id="linkedin" src={linkedIcon} alt="linkedin"/>
         </a>
       </div>
 
