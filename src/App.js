@@ -1,23 +1,43 @@
 import './App.css';
+import {useRef} from 'react'
 import Navbar from './components/Navbar'
 import NavItem from './components/NavItem'
 import DropdownMenu from './components/DropdownMenu'
 import AboutMe from './components/Pages/Projects/AboutMe'
 import Projects from './components/Pages/Projects/Projects'
+import Contact from './components/Pages/Projects/Contact'
 
 function App() {
+
+  const AboutMeRef = useRef(null)
+  const ProjectsRef = useRef(null)
+  const ContactRef = useRef(null)
+
+  function clickAboutMe() {
+    AboutMeRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+  function clickProjects() {
+    ProjectsRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+  function clickContact() {
+    ContactRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="App">
       <Navbar>
         <NavItem icon="▼">
-          <DropdownMenu/>
+          <DropdownMenu
+            clickAboutMe={clickAboutMe}
+            clickProjects={clickProjects}
+            clickContact={clickContact} />
         </NavItem>
       </Navbar>
 
       <div className="bodyContent">
-        <AboutMe />
-        <Projects/>
-        <Projects/>
+        <AboutMe AboutMeRef={AboutMeRef}/>
+        <Projects ProjectsRef={ProjectsRef}/>
+        <Contact ContactRef={ContactRef}/>
       </div>
 
     </div>

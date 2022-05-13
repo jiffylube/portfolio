@@ -39,6 +39,7 @@ ul {
 a {
   color: var(--text-color);
   text-decoration: none;
+  margin-right: 25px;
 }
 
 .navbar {
@@ -110,9 +111,10 @@ a {
 
 .menu-item:hover {
   background-color: #525357;
+  cursor: pointer;
 }
 
-/* Body contents */
+/* Body contents and scrolling componenents*/
 
 .bodyContent {
   margin: 3%;
@@ -121,19 +123,19 @@ a {
   height: 600px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-padding: 50px;
+  scroll-padding: 25px;
 }
 
 .pages {
   margin: 5%;
-  padding: 1%;
+  padding: 10%;
   background-color: rgb(255, 173, 143);
   height: 500px;
   scroll-snap-align: start;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 40%);
 }
 
 .content {
-  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -145,4 +147,16 @@ a {
 
 .projectsLinks:hover {
   color: rgb(29, 130, 64);
+}
+
+#linkedin {
+  width: 5%;
+}
+
+#github {
+  width: 5%;
+}
+
+#tacoJump {
+  width: auto;
 }

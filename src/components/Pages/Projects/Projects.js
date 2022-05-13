@@ -1,12 +1,16 @@
 import TacoJump from './addProject/TacoJump'
+import MhWorld from './addProject/MhWorld'
+import MySelfie from './addProject/MySelfie'
 
-function Projects() {
+function Projects(props) {
+
+  const ProjectsRef = props.ProjectsRef
+
   return (
-    <div className="pages" id="Projects">
-      <div> Hater </div>
-      <TacoJump/>
-      <div> MySelfie </div>
-      <div> MhWorld </div>
+    <div ref={ProjectsRef} className="pages" id="Projects">
+      <TacoJump />
+      <MhWorld />
+      <MySelfie />
     </div>
   )
 }

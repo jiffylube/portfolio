@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import { Link } from 'react-scroll'
+function DropdownMenu(props) {
 
-function DropdownMenu() {
-
-  const [click, setClick] = useState(false);
-  const handleClick = () => 
-    console.log('clicked')
+  const clickAboutMe = props.clickAboutMe
+  const clickProjects = props.clickProjects
+  const clickContact = props.clickContact
 
   return (
     <div className="dropdown">
-        
-      <Link to="AboutMe" spy={true} smooth={true} offset={50} duration={500} className="menu-item" onClick={handleClick}>About Me</Link>
-      <Link to="Projects" spy={true} smooth={true} offset={50} duration={500} className="menu-item" >Projects</Link>
-      <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} className="menu-item" >Contact</Link>
-         
+    
+      <div onClick={props.clickAboutMe} className='menu-item' >About Me</div>
+      <div onClick={props.clickProjects} className='menu-item' >Projects</div>
+      <div onClick={props.clickContact} className='menu-item' >Contact</div>
+
     </div>
   )
 }
