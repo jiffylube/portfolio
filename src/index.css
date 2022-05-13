@@ -116,7 +116,7 @@ a {
 
 /* Body contents and scrolling componenents*/
 
-.content {
+.panels {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-padding: -250px;

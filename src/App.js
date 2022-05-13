@@ -34,7 +34,7 @@ function App() {
         </NavItem>
       </Navbar>
 
-    <div className="content">
+    <div className="panels">
       <AboutMe AboutMeRef={AboutMeRef}/>
       <Projects ProjectsRef={ProjectsRef}/>
       <Contact ContactRef={ContactRef} />
