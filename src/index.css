@@ -116,25 +116,20 @@ a {
 
 /* Body contents and scrolling componenents*/
 
-.app {
-  margin: 3%;
-  padding: 1%;
+.content {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-padding: 25px;
+  scroll-padding: -250px;
+  padding-bottom: 5%;
 }
 
 .pages {
   margin: 5%;
   padding: 10%;
   background-color: rgb(254, 204, 186);
-  height: 500px;
+  height: 700px;
   scroll-snap-align: start;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 40%);
-}
-
-.content {
-  padding-bottom: 5%;
 }
 
 /* add project pages */

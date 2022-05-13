@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="App">
       <Navbar>
         <NavItem icon="▼">
           <DropdownMenu
@@ -34,10 +34,12 @@ function App() {
         </NavItem>
       </Navbar>
 
+    <div className="content">
       <AboutMe AboutMeRef={AboutMeRef}/>
       <Projects ProjectsRef={ProjectsRef}/>
-      <Contact ContactRef={ContactRef}/>
-
+      <Contact ContactRef={ContactRef} />
+    </div>
+      
     </div>
   );
 }
