@@ -1,5 +1,5 @@
 import './App.css';
-import {useRef} from 'react'
+import React, {useRef} from 'react'
 import Navbar from './components/Navbar'
 import NavItem from './components/NavItem'
 import DropdownMenu from './components/DropdownMenu'
@@ -9,8 +9,8 @@ import Contact from './components/Pages/Projects/Contact'
 
 function App() {
 
-  const AboutMeRef = useRef(null)
-  const ProjectsRef = useRef(null)
+  const AboutMeRef = useRef()
+  const ProjectsRef = useRef()
   const ContactRef = useRef(null)
 
   function clickAboutMe() {
