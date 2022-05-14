@@ -136,15 +136,23 @@ a {
 }
 
 .projectsLinks:hover {
-  color: rgb(29, 130, 64);
+  color: rgb(199, 60, 233);
 }
 
 #linkedin {
   width: 5%;
 }
 
+#linkedin:hover {
+  background-color: #242526;
+}
+
 #github {
   width: 5%;
+}
+
+#github:hover {
+  background-color: #242526;
 }
 
 #tacoJump {
