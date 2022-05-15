@@ -17,17 +17,17 @@ function Contact(props) {
       <p>Brooklyn, NY</p>
       
       <div>
-        <a href={resume} className="projectsLinks">Resume</a>
+        <a href={resume} className="projectsLinks" target="_blank" rel="noreferrer noopener">Resume</a>
       </div>
 
       <div>
-        <a href="https://www.linkedin.com/in/jeffrey-lu-a906b0a6" className="projectsLinks">
+        <a href="https://www.linkedin.com/in/jeffrey-lu-a906b0a6" className="projectsLinks" target="_blank" rel="noreferrer noopener">
           <img id="linkedin" src={linkedIcon} alt="linkedin"/>
         </a>
       </div>
 
       <div>
-        <a href="https://github.com/jiffylube/" className="projectsLinks" >
+        <a href="https://github.com/jiffylube/" className="projectsLinks" target="_blank" rel="noreferrer noopener">
           <img id="github" src={gitIcon} alt="Github"/>
         </a>
       </div>

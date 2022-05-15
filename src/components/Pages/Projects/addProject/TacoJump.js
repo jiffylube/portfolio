@@ -2,10 +2,10 @@
 
 function TacoJump() {
   return(
-  <div className="content">
-    <h2>Taco Jump</h2>
-    <a href="https://jiffylube.github.io/Taco-Jump/" className="projectsLinks">Deployment</a>
-    <a href="https://github.com/jiffylube/Taco-Jump" className="projectsLinks">Github</a>
+  <div className="project">
+    <h3>Taco Jump</h3>
+    <a href="https://jiffylube.github.io/Taco-Jump/" className="projectsLinks" target="_blank" rel="noreferrer noopener">Deployment</a>
+    <a href="https://github.com/jiffylube/Taco-Jump" className="projectsLinks" target="_blank" rel="noreferrer noopener">Github</a>
     {/* <div>
       <img id="tacoJump" src={tacoPic} alt="TacoJump"></img>
     </div> */}

@@ -7,7 +7,8 @@ function Projects(props) {
   const ProjectsRef = props.ProjectsRef
 
   return (
-    <div ref={ProjectsRef} className="pages" id="Projects">
+    <div ref={ProjectsRef} className="pages" id="projects">
+      <h2>Projects</h2>
       <TacoJump />
       <MhWorld />
       <MySelfie />
