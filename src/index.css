@@ -143,11 +143,40 @@ a {
 }
 
 .projectsLinks {
-  color: black;
+  /* color: black; */
+  background-image: linear-gradient(to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectsLinks:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 .projectsLinks:hover {
-  color: rgb(199, 60, 233);
+  /* color: rgb(199, 60, 233); */
+  background-position: 0;
+}
+
+.projectsLinks:hover::before {
+  width: 100%;
 }
 
 #aboutMe {
@@ -179,25 +208,21 @@ a {
 }
 
 #linkedin {
-  width: 5%;
   background-color: #484a4d;
   border-radius: 5px;
   margin-top: 15px;
 }
 
 #linkedin:hover {
-  background-color: #000000;
   transform: translateY(-2px);
 }
 
 #github {
-  width: 5%;
   margin-top: 15px;
   background-color: #484a4d;
 }
 
 #github:hover {
-  background-color: #000000;
   transform: translateY(-2px);
 }
 
