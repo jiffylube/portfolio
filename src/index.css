@@ -128,7 +128,6 @@ a {
 .pages {
   padding: 10%;
   height: 100vh;
-  /* background-color: rgba(255, 241, 236, 0.1); */
   text-shadow: 0 0 1px black;
   scroll-snap-align: start;
 }
@@ -137,7 +136,8 @@ a {
 
 .projectPages {
   border: 2px solid rgb(0, 0, 0);
-  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 30%);
+  box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 30%);
+  background-color: rgb(215, 251, 232);
   padding: 5vh;
   margin: 2vh;
 }
@@ -145,8 +145,8 @@ a {
 .projectsLinks {
   /* color: black; */
   background-image: linear-gradient(to right,
-      #54b3d6,
-      #54b3d6 50%,
+      #d877f6,
+      #d877f6 50%,
       #000 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -160,7 +160,7 @@ a {
 
 .projectsLinks:before {
   content: '';
-  background: #54b3d6;
+  background: #d877f6;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -211,6 +211,7 @@ a {
   background-color: #484a4d;
   border-radius: 5px;
   margin-top: 15px;
+  width: 4rem;
 }
 
 #linkedin:hover {
@@ -220,6 +221,7 @@ a {
 #github {
   margin-top: 15px;
   background-color: #484a4d;
+  width: 4rem;
 }
 
 #github:hover {
@@ -236,6 +238,10 @@ a {
     flex-wrap: wrap;
     overflow: auto;
     justify-content: center;
+  }
+
+  #projects {
+    overflow: auto;
   }
 
   .projectPages {

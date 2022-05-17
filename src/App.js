@@ -11,7 +11,7 @@ function App() {
 
   const AboutMeRef = useRef()
   const ProjectsRef = useRef()
-  const ContactRef = useRef(null)
+  const ContactRef = useRef()
 
   function clickAboutMe() {
     AboutMeRef.current.scrollIntoView({ behavior: 'smooth' })
