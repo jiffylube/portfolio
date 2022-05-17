@@ -143,17 +143,10 @@ a {
 }
 
 .projectsLinks {
-  /* color: black; */
-  background-image: linear-gradient(to right,
-      #d877f6,
-      #d877f6 50%,
-      #000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
+  color: black;
   display: inline-block;
   padding: 5px 0;
   position: relative;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -168,11 +161,6 @@ a {
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
-}
-
-.projectsLinks:hover {
-  /* color: rgb(199, 60, 233); */
-  background-position: 0;
 }
 
 .projectsLinks:hover::before {
