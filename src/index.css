@@ -121,7 +121,7 @@ a {
 
 .panels {
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-padding-top: -80px;
   height: 100vh;
 }

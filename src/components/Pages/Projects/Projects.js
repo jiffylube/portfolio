@@ -1,6 +1,7 @@
 import TacoJump from './addProject/TacoJump'
 import MhWorld from './addProject/MhWorld'
 import MySelfie from './addProject/MySelfie'
+import Hater from './addProject/Hater'
 
 function Projects(props) {
 
@@ -13,6 +14,7 @@ function Projects(props) {
           <TacoJump />
           <MhWorld />
           <MySelfie />
+          <Hater/>
         </div>
     </div>
   )
