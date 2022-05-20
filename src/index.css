@@ -128,7 +128,7 @@ a {
 
 .pages {
   padding: 10%;
-  height: 100vh;
+  height: 100%;
   text-shadow: 0 0 1px black;
   scroll-snap-align: start;
 }
@@ -140,8 +140,14 @@ a {
   box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 30%);
   background-color: rgb(215, 251, 232);
   border-radius: 10px;
-  padding: 4vh;
-  margin: 2vh;
+  padding: 2rem;
+  margin: 1rem;
+  width: 15rem;
+}
+
+.projectPages:hover {
+  border: 2px solid #d877f6;
+  box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 60%);
 }
 
 .projectsLinks {
@@ -185,8 +191,13 @@ a {
 
 #projects {
   background-color: rgb(157, 243, 196);
+  height: fit-content;
+}
+
+.projectsPageBox {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 #contact {
@@ -214,10 +225,6 @@ a {
   transform: translateY(-2px);
 }
 
-#tacoJump {
-  width: auto;
-}
-
 @media only screen and (max-width: 950px) {
   #aboutMe {
     display: flex;
@@ -231,8 +238,8 @@ a {
   }
 
   .projectPages {
-    padding: 1vh;
-    margin: 2vh 0vw;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 

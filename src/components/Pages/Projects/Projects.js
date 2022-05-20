@@ -8,10 +8,12 @@ function Projects(props) {
 
   return (
     <div ref={ProjectsRef} className="pages" id="projects">
-      <h2>Projects</h2>
-      <TacoJump />
-      <MhWorld />
-      <MySelfie />
+        <h2>Projects</h2>
+        <div className='projectsPageBox'>
+          <TacoJump />
+          <MhWorld />
+          <MySelfie />
+        </div>
     </div>
   )
 }
