@@ -7,7 +7,7 @@ function AboutMe(props) {
     <div ref={AboutMeRef} className="pages" id="aboutMe">
       <div className="aboutMeText">
         <h2>Hi I'm Jeff</h2>
-        <p>I am a Full-Stack developer with a strong background in shipping and logistics. I am an avid athlete,  and enjoy passing time taking part in activities. This career switch is a huge pivot in my life, and I welcome the challenges that it brings. Check out my projects.
+        <p>I am a Full-Stack developer with a strong background in shipping and logistics. I am an avid athlete, and enjoy passing time taking part in activities. Born and raised in Brooklyn, I still find excitement in exploring the nooks and cranny of NYC and its ever changing communities. This career switch is a huge pivot in my life, and I welcome the challenges creative freedom that it brings. Check out my projects.
         </p>
       </div>
       <img src={require("../../../Pics/jeff.jpg")} alt={"JeffLu"} className="aboutMePic"/>
