@@ -21,7 +21,7 @@ function Contact(props) {
       </div>
 
       <div>
-        <a href="https://www.linkedin.com/in/jeffrey-lu-a906b0a6" className="projectsLinks" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.linkedin.com/in/lu-jeffrey/" className="projectsLinks" target="_blank" rel="noreferrer noopener">
           <img id="linkedin" src={linkedIcon} alt="linkedin"/>
         </a>
       </div>
