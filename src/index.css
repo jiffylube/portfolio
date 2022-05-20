@@ -156,6 +156,10 @@ a {
   font-size: medium;
 }
 
+.projectPagesLinksBox {
+  margin-top: auto;
+}
+
 .projectsLinks {
   color: black;
   display: inline-block;
@@ -183,11 +187,18 @@ a {
 #aboutMe {
   background-color: rgb(215, 251, 232);
   display: flex;
+  height: fit-content;
+  flex-direction: row;
 }
 
 .aboutMeText {
   text-align: center;
   padding: 2vw;
+}
+
+.imageBox {
+  display: flex;
+  align-items: center;
 }
 
 .aboutMePic {
