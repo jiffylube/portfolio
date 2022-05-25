@@ -34,11 +34,11 @@ function App() {
         </NavItem>
       </Navbar>
 
-    <div className="panels">
+    {/* <div className="panels"> */}
       <AboutMe AboutMeRef={AboutMeRef}/>
       <Projects ProjectsRef={ProjectsRef}/>
       <Contact ContactRef={ContactRef} />
-    </div>
+    {/* </div> */}
       
     </div>
   );

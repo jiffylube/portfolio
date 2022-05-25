@@ -14,6 +14,9 @@ body {
   /* background-position: bottom right; */
   height: 100vh;
   width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: -80px;
 }
 
 code {
@@ -119,16 +122,16 @@ a {
 
 /* Body contents and scrolling componenents*/
 
-.panels {
+/* .panels {
   overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-padding-top: -80px;
   height: 100vh;
-}
+} */
 
 .pages {
   padding: 10%;
-  height: 100%;
+  height: 100vh;
   text-shadow: 0 0 1px black;
   scroll-snap-align: start;
 }
