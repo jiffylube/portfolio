@@ -142,7 +142,7 @@ a {
   border-radius: 10px;
   padding: 2rem;
   margin: 1rem;
-  width: 15rem;
+  width: 25rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -259,6 +259,16 @@ a {
     padding: 1rem;
     margin: 1rem;
     width: auto;
+  }
+
+  .navbar {
+    height: calc (var(--nav-size)* 0.9);
+  }
+
+  .icon-button {
+    --button-size: calc(var(--nav-size)* 0.4);
+    width: var(--button-size);
+    height: var(--button-size);
   }
 }
 
