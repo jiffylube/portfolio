@@ -23,6 +23,8 @@ function App() {
 
   return (
     <div className="App">
+      
+    <div className="panels">
 
     <nav>
       <div className="dropdown">
@@ -34,7 +36,6 @@ function App() {
       </div>       
     </nav>
 
-    <div className="panels">
       <AboutMe AboutMeRef={AboutMeRef}/>
       <Projects ProjectsRef={ProjectsRef}/>
       <Contact ContactRef={ContactRef} />
