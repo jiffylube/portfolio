@@ -145,7 +145,7 @@ nav {
 
 /* add project pages */
 
-.projectPages {
+.projectTabs {
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 30%);
   background-color: rgb(215, 251, 232);
@@ -157,16 +157,16 @@ nav {
   flex-wrap: wrap;
 }
 
-.projectPages:hover {
+.projectTabs:hover {
   border: 2px solid #d877f6;
   box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 60%);
 }
 
-.projectPagesText {
+.projectTabsText {
   font-size: medium;
 }
 
-.projectPagesLinksBox {
+.projectTabsLinksBox {
   margin-top: auto;
 }
 
@@ -224,6 +224,7 @@ nav {
 
 #projects {
   background-color: rgb(157, 243, 196);
+  min-height: 100vh;
   height: fit-content;
 }
 
