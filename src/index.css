@@ -46,7 +46,7 @@ nav {
   justify-content: flex-end;
   /* border: 1px solid red; */
   background-color: #142734;
-  position: absolute;
+  position: sticky;
 }
 
 .dropdown {
