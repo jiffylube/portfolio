@@ -51,6 +51,7 @@ nav {
 
 .dropdown {
   padding: 20px 80px;
+  margin-right: 10px;
   height: 20px;
   display: flex;
   justify-content: center;
