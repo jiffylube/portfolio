@@ -1,7 +1,5 @@
 import './App.css';
 import React, {useRef} from 'react'
-import Navbar from './components/Navbar'
-import NavItem from './components/NavItem'
 import DropdownMenu from './components/DropdownMenu'
 import AboutMe from './components/Pages/Projects/AboutMe'
 import Projects from './components/Pages/Projects/Projects'
@@ -25,14 +23,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar>
-        <NavItem icon="⍱">
-          <DropdownMenu
+
+    <nav>
+      <div className="dropdown">
+      ⍱
+            <DropdownMenu
             clickAboutMe={clickAboutMe}
             clickProjects={clickProjects}
-            clickContact={clickContact} />
-        </NavItem>
-      </Navbar>
+            clickContact={clickContact} />  
+      </div>       
+    </nav>
 
     <div className="panels">
       <AboutMe AboutMeRef={AboutMeRef}/>

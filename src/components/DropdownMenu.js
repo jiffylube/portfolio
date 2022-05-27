@@ -5,13 +5,11 @@ function DropdownMenu(props) {
   const clickContact = props.clickContact
 
   return (
-    <div className="dropdown">
-    
-      <div onClick={props.clickAboutMe} className='menu-item' >About Me</div>
-      <div onClick={props.clickProjects} className='menu-item' >Projects</div>
-      <div onClick={props.clickContact} className='menu-item' >Contact</div>
-
-    </div>
+    <ul className="dropdownMenu">
+      <li onClick={props.clickAboutMe} className="dropdownItem-1">About Me</li>
+      <li onClick={props.clickProjects} className="dropdownItem-2">Projects</li>
+      <li onClick={props.clickContact} className="dropdownItem-3">Contact</li>
+    </ul>
   )
 }
 

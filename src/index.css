@@ -1,3 +1,9 @@
+/* * {
+  border: 1px solid rebeccapurple;
+  margin: 2px;
+  padding: 2px;
+} */
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -20,16 +26,6 @@ code {
   font-size: large;
 }
 
-:root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #dadce1;
-  --nav-size: 80px;
-  --border: 1px solid #474a4d;
-  --border-radius: 8px;
-  --speed: 500ms;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -44,77 +40,90 @@ a {
 
 /* Nav bar  */
 
-.navbar {
-  color: white;
-  height: var(--nav-size);
-  background-color: var(--bg);
-  padding: 0 2rem;
-  border-bottom: var(--border);
+nav {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 30%);
+  /* border: 1px solid red; */
+  background-color: #142734;
+  position: absolute;
 }
-
-.navbar-nav {
-  max-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-item {
-  width: calc (var(--nav-size)* 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-button {
-  --button-size: calc(var(--nav-size)* 0.5);
-  width: var(--button-size);
-  height: var(--button-size);
-  background-color: #484a4d;
-  border-radius: 50%;
-  padding: 5px;
-  margin: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 300ms;
-  cursor: pointer;
-}
-
-.icon-button:hover {
-  filter: brightness(1.3);
-}
-
-/* Nav Dropdown Menu */
 
 .dropdown {
-  position: absolute;
-  top: 58px;
-  width: 300px;
-  transform: translateX(-45%);
-  background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-}
-
-.menu-item {
-  height: 50px;
+  padding: 20px 80px;
+  height: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border-radius: var(--border-radius);
-  transition: background var(--speed);
-  padding: 0.5rem;
+  color: #fff;
+  /* background: #2e3f4f; */
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
 }
 
-.menu-item:hover {
-  background-color: #525357;
+.dropdown:hover {
+  /* background: #2770a1; */
   cursor: pointer;
+}
+
+.dropdown:hover .dropdownMenu li {
+  display: block;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.dropdownMenu li {
+  display: none;
+  color: #fff;
+  background-color: #2e3f4f;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.dropdownMenu li:hover {
+  background-color: #2770a1;
+}
+
+
+.dropdownMenu .dropdownItem-1 {
+  transform-origin: top center;
+  animation: pop 300ms 60ms ease-in-out forwards;
+}
+
+.dropdownMenu .dropdownItem-2 {
+  transform-origin: top center;
+  animation: pop 300ms 120ms ease-in-out forwards;
+}
+
+.dropdownMenu .dropdownItem-3 {
+  transform-origin: top center;
+  animation: pop 300ms 180ms ease-in-out forwards;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Body contents and scrolling componenents*/
@@ -122,13 +131,14 @@ a {
 .panels {
   overflow-y: scroll;
   scroll-snap-type: y proximity;
-  scroll-padding-top: -80px;
   height: 100vh;
 }
 
 .pages {
-  padding: 10%;
+  padding: 1rem 10rem;
+  margin: 0;
   height: 100vh;
+  scroll-margin-top: 60px;
   text-shadow: 0 0 1px black;
   scroll-snap-align: start;
 }
@@ -187,18 +197,23 @@ a {
 #aboutMe {
   background-color: rgb(215, 251, 232);
   display: flex;
-  height: fit-content;
   flex-direction: row;
+  /* height: fit-content; */
 }
 
 .aboutMeText {
+  display: flex;
   text-align: center;
-  padding: 2vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .imageBox {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 50px;
 }
 
 .aboutMePic {
@@ -244,6 +259,11 @@ a {
 }
 
 @media only screen and (max-width: 950px) {
+  .pages {
+    padding: 40px;
+    padding-top: 50px;
+  }
+
   #aboutMe {
     display: flex;
     flex-wrap: wrap;
@@ -255,21 +275,10 @@ a {
     overflow: auto;
   }
 
-  .projectPages {
-    padding: 1rem;
-    margin: 1rem;
-    width: auto;
+  .imageBox {
+    margin: 0;
   }
 
-  .navbar {
-    height: calc (var(--nav-size)* 0.9);
-  }
-
-  .icon-button {
-    --button-size: calc(var(--nav-size)* 0.4);
-    width: var(--button-size);
-    height: var(--button-size);
-  }
 }
 
 @media only screen and (max-width: 400px) {
