@@ -43,7 +43,7 @@ a {
 nav {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* border: 1px solid red; */
   background-color: #142734;
   position: absolute;
@@ -52,12 +52,15 @@ nav {
 .dropdown {
   padding: 20px 80px;
   /* margin-right: 10px; */
-  height: 20px;
+  /* height: 20px; */
+  height: 3vh;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   /* background: #2e3f4f; */
+  background: #314d68;
   position: relative;
   font-size: 18px;
   perspective: 1000px;
@@ -75,7 +78,7 @@ nav {
 
 .dropdownMenu {
   position: absolute;
-  top: 60px;
+  top: 8vh;
   left: 0;
   width: 100%;
   perspective: 1000px;
@@ -98,17 +101,17 @@ nav {
 
 .dropdownMenu .dropdownItem-1 {
   transform-origin: top center;
-  animation: pop 300ms 60ms ease-in-out forwards;
+  animation: pop 200ms 60ms ease-in-out forwards;
 }
 
 .dropdownMenu .dropdownItem-2 {
   transform-origin: top center;
-  animation: pop 300ms 120ms ease-in-out forwards;
+  animation: pop 200ms 120ms ease-in-out forwards;
 }
 
 .dropdownMenu .dropdownItem-3 {
   transform-origin: top center;
-  animation: pop 300ms 180ms ease-in-out forwards;
+  animation: pop 200ms 180ms ease-in-out forwards;
 }
 
 @keyframes pop {

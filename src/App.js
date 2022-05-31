@@ -23,12 +23,12 @@ function App() {
 
   return (
     <div className="App">
-      
+
     <div className="panels">
 
     <nav>
       <div className="dropdown">
-      ⍱
+      ▼
             <DropdownMenu
             clickAboutMe={clickAboutMe}
             clickProjects={clickProjects}
