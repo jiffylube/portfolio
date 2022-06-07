@@ -63,7 +63,7 @@ nav {
   color: #fff;
   /* background: red; */
   /* background: #314d68; */
-  position: relative;
+  position: sticky;
   font-size: 18px;
   perspective: 1000px;
   z-index: 100;
