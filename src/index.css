@@ -56,14 +56,14 @@ nav {
   /* margin-right: 10px; */
   /* height: 20px; */
   top: 0;
-  width: fill;
+  width: 20vw;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   /* background: red; */
-  /* background: #314d68; */
+  background: #314d68;
   position: relative;
   font-size: 18px;
   perspective: 1000px;
