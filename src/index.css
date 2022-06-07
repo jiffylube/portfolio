@@ -47,7 +47,7 @@ nav {
   justify-content: flex-start;
   /* border: 1px solid red; */
   background-color: #142734;
-  position: absolute;
+  position: relative;
 }
 
 .dropdown {
@@ -63,7 +63,7 @@ nav {
   color: #fff;
   /* background: red; */
   /* background: #314d68; */
-  position: sticky;
+  /* position: sticky; */
   font-size: 18px;
   perspective: 1000px;
   z-index: 100;
