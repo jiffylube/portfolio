@@ -65,7 +65,7 @@ nav {
   /* background: red; */
   background: #314d68;
   position: relative;
-  font-size: 18px;
+  /* font-size: 18px; */
   perspective: 1000px;
   z-index: 100;
 }
@@ -95,7 +95,7 @@ nav {
   color: #fff;
   background-color: #2e3f4f;
   padding: 10px 20px;
-  font-size: 16px;
+  /* font-size: 16px; */
   opacity: 0;
 }
 
@@ -147,7 +147,7 @@ nav {
   padding: 1rem 10rem;
   margin: 0;
   height: 100vh;
-  scroll-margin-top: 3vh;
+  scroll-margin-top: 6vh;
   text-shadow: 0 0 1px black;
   scroll-snap-align: start;
 }
@@ -291,8 +291,12 @@ nav {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 750px) {
   body {
     font-size: medium;
+  }
+
+  .dropdown {
+    width: 33vw;
   }
 }
