@@ -11,9 +11,9 @@ function Projects(props) {
     <div ref={ProjectsRef} className="pages" id="projects">
         <h2>Projects</h2>
         <div className='projectsPageBox'>
-          <TacoJump />
           <MhWorld />
           <MySelfie />
+          <TacoJump />
           <Hater/>
         </div>
     </div>
