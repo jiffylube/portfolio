@@ -5,6 +5,11 @@ function AboutMe(props) {
 
   return (
     <div ref={AboutMeRef} className="pages" id="aboutMe">
+
+      <div className="imageBox">
+        <img src={require("../../../Pics/jeff.jpg")} alt={"JeffLu"} className="aboutMePic" />
+      </div>
+
       <div className="aboutMeText">
         <div className="boxBorder">
           <h2>Hi I'm Jeff</h2>
@@ -13,9 +18,6 @@ function AboutMe(props) {
         </div>
       </div>
 
-      <div className="imageBox">
-        <img src={require("../../../Pics/jeff.jpg")} alt={"JeffLu"} className="aboutMePic" />
-      </div>
     </div>
   )
 }
