@@ -206,6 +206,22 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: slideIn 500ms ease-in-out both;
+}
+
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .boxBorder {
@@ -250,20 +266,22 @@ nav {
   border-radius: 5px;
   margin-top: 15px;
   width: 4rem;
+  transition: transform 250ms;
 }
 
 #linkedin:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 #github {
   margin-top: 15px;
   background-color: #484a4d;
   width: 4rem;
+  transition: transform 250ms;
 }
 
 #github:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 990px) {
