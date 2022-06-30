@@ -284,7 +284,7 @@ nav {
   transform: translateY(-3px);
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
   .pages {
     padding: 40px;
     padding-top: 50px;
