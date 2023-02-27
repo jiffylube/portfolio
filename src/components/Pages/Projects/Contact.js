@@ -13,8 +13,6 @@ function Contact(props) {
       <h2>CONTACT INFO</h2>
 
       <div className="projectsLinks">lu.jeffrey91@gmail.com</div>
-
-      <p>Brooklyn, NY</p>
       
       <div>
         <a href={resume} className="projectsLinks" target="_blank" rel="noreferrer noopener">Resume</a>

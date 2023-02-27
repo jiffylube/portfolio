@@ -8,22 +8,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Nanum Brush Script', cursive;
-  font-family: 'Poiret One', cursive; */
-
+  font-family: 'Nanum Brush Script', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: x-large;
   font-weight: bold;
   letter-spacing: 4px;
-  color: white;
-
-  background-image: url(./Pics/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
-  background-size: cover;
-  background-position: fixed center;
-  background-repeat: no-repeat;
-  backdrop-filter: brightness(69%);
-
   /* background-color: rgb(255, 239, 220); */
   /* background-image: url("././Pics/background.jpg"); */
   /* background-size: contain; */
@@ -161,7 +150,7 @@ nav {
 .projectTabs {
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 0 1px 2px 0 rgba(66, 60, 67, 0.3), 0 2px 6px 2px rgb(60 64 67 / 30%);
-  /* background-color: rgb(215, 251, 232); */
+  background-color: rgb(215, 251, 232);
   border-radius: 10px;
   padding: 2rem;
   margin: 1rem;
@@ -169,8 +158,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   transition: all 0.3s ease-in-out;
-
-
 }
 
 .projectTabs:hover {
@@ -187,7 +174,7 @@ nav {
 }
 
 .projectsLinks {
-  color: rgb(206, 223, 206);
+  color: black;
   display: inline-block;
   padding: 5px 0;
   position: relative;
@@ -211,7 +198,7 @@ nav {
 }
 
 #aboutMe {
-  /* background-color: rgb(215, 251, 232); */
+  background-color: rgb(215, 251, 232);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +210,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  animation: slideIn 1000ms ease-in-out both;
+  animation: slideIn 500ms ease-in-out both;
   animation-iteration-count: 1;
 }
 
@@ -256,7 +243,7 @@ nav {
 }
 
 .aboutMePic {
-  opacity: 80%;
+  opacity: 60%;
   margin: 1vh;
   height: 50vh;
   border-radius: 1%;
@@ -269,7 +256,7 @@ nav {
 }
 
 #projects {
-  /* background-color: rgb(157, 243, 196); */
+  background-color: rgb(157, 243, 196);
   min-height: 100vh;
   height: fit-content;
 }
@@ -280,9 +267,9 @@ nav {
   padding: 1rem;
 }
 
-/* #contact {
+#contact {
   background-color: rgb(98, 210, 162);
-} */
+}
 
 #linkedin {
   /* background-color: #484a4d; */
