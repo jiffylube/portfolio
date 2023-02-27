@@ -17,7 +17,7 @@ function AboutMe(props) {
           </p>
         </div>
       </div>
-
+      
     </div>
   )
 }

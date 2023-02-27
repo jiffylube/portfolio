@@ -18,11 +18,11 @@ body {
   letter-spacing: 4px;
   color: white;
 
-  background-image: url(./Pics/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
+  /* background-image: url(./Pics/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
   background-size: cover;
   background-position: fixed center;
   background-repeat: no-repeat;
-  backdrop-filter: brightness(69%);
+  backdrop-filter: brightness(69%); */
 
   /* background-color: rgb(255, 239, 220); */
   /* background-image: url("././Pics/background.jpg"); */
@@ -145,6 +145,12 @@ nav {
   overflow-y: scroll;
   /* scroll-snap-type: y proximity; */
   height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(./Pics/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
+  background-size: cover;
+  background-position: fixed center;
+  background-repeat: no-repeat;
+
 }
 
 .pages {
@@ -154,6 +160,7 @@ nav {
   scroll-margin-top: 6vh;
   text-shadow: 0 0 1px black;
   /* scroll-snap-align: start; */
+  gap: 5vw;
 }
 
 /* add project pages */
@@ -170,7 +177,7 @@ nav {
   flex-wrap: wrap;
   transition: all 0.3s ease-in-out;
 
-
+  backdrop-filter: blur(5px);
 }
 
 .projectTabs:hover {
@@ -225,6 +232,7 @@ nav {
   flex-direction: column;
   animation: slideIn 1000ms ease-in-out both;
   animation-iteration-count: 1;
+  backdrop-filter: blur(5px);
 }
 
 
