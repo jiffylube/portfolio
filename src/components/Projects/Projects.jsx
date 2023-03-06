@@ -3,19 +3,27 @@ import MhWorld from './addProject/MhWorld'
 import MySelfie from './addProject/MySelfie'
 import Hater from './addProject/Hater'
 
+import './Projects.css'
+
 function Projects(props) {
 
-  const ProjectsRef = props.ProjectsRef
+  // const ProjectsRef = props.ProjectsRef
 
   return (
-    <div ref={ProjectsRef} className="pages" id="projects">
+    <div className="pages" id="projects">
+
+      <div id="projectsWrap">
+
         <h2>Projects</h2>
-        <div className='projectsPageBox'>
+        <div id='projectsPageBox'>
           <MhWorld />
           <MySelfie />
           <TacoJump />
-          <Hater/>
+          <Hater />
         </div>
+
+      </div>
+
     </div>
   )
 }

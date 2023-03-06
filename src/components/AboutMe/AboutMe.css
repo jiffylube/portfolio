@@ -1,0 +1,42 @@
+#aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  font-size: large;
+  letter-spacing: 2px;
+
+}
+
+/* #aboutLeft {} */
+
+.pic {
+  background-image: url(../../Pics/jeff.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  border-radius: 100%;
+  height: 34vh;
+  width: 34vh;
+  transition: all .5s;
+  filter: opacity(65%);
+}
+
+#aboutRight {
+  width: 40%;
+  backdrop-filter: blur(10px);
+}
+
+.pic:hover {
+  filter: opacity(1);
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100vw)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}

@@ -1,0 +1,46 @@
+#sideBar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 20%;
+  left: 2%;
+  z-index: 1;
+}
+
+#iconWrapper {
+  animation: fadeIn 2000ms ease-in-out both;
+  animation-delay: 4000ms;
+}
+
+#theLine {
+  width: 0px;
+  height: calc(20% - 15px);
+  position: fixed;
+  border: 2px solid white;
+
+  bottom: 0;
+  left: calc(2% + 1rem);
+
+  animation: slideUp 1500ms ease-in-out both;
+  animation-delay: 3500ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%)
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

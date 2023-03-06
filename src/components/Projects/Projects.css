@@ -1,0 +1,27 @@
+/* * {
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+} */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  /* overflow: auto; */
+}
+
+#projectsWrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* rendered components css (addProject folder)*/
+
+/* .projectTabs {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+} */

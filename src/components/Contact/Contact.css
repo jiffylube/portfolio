@@ -1,0 +1,11 @@
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

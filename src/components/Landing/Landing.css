@@ -1,0 +1,63 @@
+#landing {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  overflow-x: hidden;
+}
+
+.landingWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text-one {
+  animation: slideRight 300ms ease-in-out both;
+  animation-iteration-count: 1;
+}
+
+#nameJeff {
+  animation: slideRight 500ms ease-in-out both;
+  animation-delay: 600ms;
+  animation-iteration-count: 1;
+}
+
+#text-two {
+  animation: slideLeft 1000ms ease-in-out both;
+  animation-delay: 2000ms;
+  animation-iteration-count: 1;
+}
+
+#text-three {
+  animation: slideLeft 1000ms ease-in-out both;
+  animation-delay: 2500ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
