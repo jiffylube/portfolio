@@ -4,17 +4,16 @@
   margin: 5px;
 } */
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.body {
+.container {
   -ms-overflow-style: none;
-  /* IE and Edge */
+  /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 .panels {
