@@ -14,7 +14,7 @@ function Projects(props) {
 
       <div id="projectsWrap">
 
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div id='projectsPageBox'>
           <MhWorld />
           <MySelfie />

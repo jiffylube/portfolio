@@ -16,12 +16,18 @@
   flex-direction: column;
 }
 
-
 /* rendered components css (addProject folder)*/
 
-/* .projectTabs {
+.projectTabs {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  height: 500px;
-  width: 500px;
-} */
+  backdrop-filter: blur(2px);
+  margin: 4em;
+}
+
+.projectTabsLinksBox {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
+}
