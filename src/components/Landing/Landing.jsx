@@ -5,7 +5,6 @@ import './Landing.css'
 
 function Landing(props) {
 
-
   // const Landing = props.LandingRef
   // const [slideH1, setSlideH1] = useState({ transform: "translateX(0)" });
   // const [slideH3, setSlideH3] = useState({ transform: "translateX(0)" });

@@ -22,8 +22,8 @@
   filter: opacity(65%);
 }
 
-#aboutRight {
-  width: 40%;
+#aboutText {
+  width: 40vw;
   backdrop-filter: blur(4px);
 }
 
@@ -39,4 +39,38 @@
   100% {
     transform: translateX(0)
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font-size: medium;
+  }
+
+  .pic {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  #aboutText {
+    width: 80vw;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  #aboutMe {
+    font-size: small;
+  }
+
+  .pic {
+    height: 20vh;
+    width: 20vh;
+    filter: opacity(1);
+  }
+
 }

@@ -11,3 +11,10 @@
   align-items: flex-start;
   gap: 1em;
 }
+
+@media only screen and (max-width: 750px) {
+  #contactWrap {
+    width: 80vw;
+    font-size: small;
+  }
+}

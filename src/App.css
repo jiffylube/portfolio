@@ -19,7 +19,7 @@
 
 .pages {
   height: 100vh;
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 1px black;
 }
 
 #linkedin {
@@ -83,13 +83,12 @@
 a {
   color: cornsilk;
   text-decoration: none;
-  /* background-color: burlywood; */
 }
 
 @media only screen and (max-width: 1000px) {
   .pages {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     height: 100vh;
     /* width: fit-content; */
   }
@@ -98,9 +97,9 @@ a {
 
 @media only screen and (max-width: 750px) {
   .pages {
-    font-size: large;
-    padding: 0;
-    margin: 0;
+    /* font-size: large; */
+    /* padding: 0;
+    margin: 0; */
     height: 100vh;
     /* width: fit-content; */
   }

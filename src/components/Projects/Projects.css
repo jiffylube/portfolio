@@ -14,20 +14,37 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: left;
 }
 
 /* rendered components css (addProject folder)*/
 
-.projectTabs {
+.renderedBox {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  row-gap: 1em;
+}
+
+.projectTabs {
   backdrop-filter: blur(2px);
-  margin: 4em;
 }
 
 .projectTabsLinksBox {
   display: flex;
   flex-direction: row-reverse;
   gap: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #projectsWrap {
+    width: 80vw;
+    font-size: medium;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  #projectsWrap {
+    font-size: small;
+  }
 }

@@ -13,6 +13,7 @@
 
 #text-one {
   animation: slideRight 300ms ease-in-out both;
+  animation-delay: 400ms;
   animation-iteration-count: 1;
 }
 
@@ -60,4 +61,12 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+@media only screen and (max-width: 750px) {
+  #landing {
+    height: 100vh;
+    font-size: medium;
+  }
+
 }

@@ -10,12 +10,14 @@ function Projects(props) {
   // const ProjectsRef = props.ProjectsRef
 
   return (
-    <div className="pages" id="projects">
+
+    // no class pages for dynamic height middle page
+    <div id="projects">
 
       <div id="projectsWrap">
 
         <h1>Projects</h1>
-        <div id='projectsPageBox'>
+        <div className="renderedBox">
           <MhWorld />
           <MySelfie />
           <TacoJump />
