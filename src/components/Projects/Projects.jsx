@@ -1,4 +1,3 @@
-import TacoJump from './addProject/TacoJump'
 import MhWorld from './addProject/MhWorld'
 import MySelfie from './addProject/MySelfie'
 import Hater from './addProject/Hater'
@@ -20,7 +19,6 @@ function Projects(props) {
         <div className="renderedBox">
           <MhWorld />
           <MySelfie />
-          <TacoJump />
           <Hater />
         </div>
 
