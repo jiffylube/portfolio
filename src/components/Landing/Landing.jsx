@@ -33,7 +33,7 @@ function Landing(props) {
         <h1 id="nameJeff" >I'm Jeff</h1>
 
         <p id="text-two">
-          I am a software engineer.
+          I am a software engineer / game developer
         </p>
 
         <p id="text-three">

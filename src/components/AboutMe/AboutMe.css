@@ -19,7 +19,7 @@
   height: 34vh;
   width: 34vh;
   transition: all .5s;
-  filter: opacity(65%);
+  filter: opacity(75%);
 }
 
 #aboutText {

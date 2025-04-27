@@ -1,6 +1,6 @@
 import gitIcon from '../../Pics/githubLogo.png';
 import linkedIcon from '../../Pics/linkedinLogo.png';
-import resume from '../../Pics/Resume.pdf';
+// import resume from '../../Pics/Resume.pdf';
 
 import './Contact.css'
 
@@ -20,9 +20,9 @@ function Contact(props) {
             target="_blank">lu.jeffrey91@gmail.com</a>
         </div>
 
-        <div className='underlineLinks'>
-          <a href={resume} target="_blank" rel="noreferrer noopener">Resume</a>
-        </div>
+        {/* <div className='underlineLinks'> */}
+          {/* <a href={resume} target="_blank" rel="noreferrer noopener">Resume</a> */}
+        {/* </div> */}
 
         <div >
           <a href="https://www.linkedin.com/in/lu-jeffrey/" target="_blank" rel="noreferrer noopener">
